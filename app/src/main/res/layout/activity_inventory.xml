@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inventory">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:id="@+id/topPanel">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Inventory Manager"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <View
+            style="@style/Divider"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/montserrat"
+            android:padding="35dp"
+            android:text="Packed: "
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/montserrat"
+            android:text="524"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="@font/montserrat"
+            android:padding="35dp"
+            android:text="Deliverd: "
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/montserrat"
+            android:text="852"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ordered"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/circle_button"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/topPanel">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat"
+            android:padding="35dp"
+            android:text="Ordered"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/circle_button"
+            android:elevation="@dimen/cardview_compat_inset_shadow"
+            android:padding="10dp"
+            android:text="100"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            app:srcCompat="@drawable/banknotes" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/shipped"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/circle_button"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/ordered">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat"
+            android:padding="35dp"
+            android:text="Shipped"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/circle_button"
+            android:elevation="@dimen/cardview_compat_inset_shadow"
+            android:padding="10dp"
+            android:text="100"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            app:srcCompat="@drawable/paper" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/delivered"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/circle_button"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/shipped">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat"
+            android:padding="35dp"
+            android:text="Delivered"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/circle_button"
+            android:elevation="@dimen/cardview_compat_inset_shadow"
+            android:padding="10dp"
+            android:text="100"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            app:srcCompat="@drawable/openbox" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
